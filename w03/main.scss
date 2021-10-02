@@ -5,6 +5,16 @@ $break-small: 32.5em;
 $break-medium: 60em;
 $break-large: 90em;
 
+//colors
+$header-backgroud-color: #6495ed;
+$header-color: #faebd7;
+$active-link-color: #deb887;
+
+$body-background-color: darkred;
+$form-background-color: burlywood;
+$input-color: antiquewhite;
+$headlines-color: white;
+
 @mixin breakpoint($break) {
   @if $break == large {
     @media (max-width: $break-large) {
@@ -27,8 +37,8 @@ $break-large: 90em;
 
 header {
   text-align: right;
-  background-color: #6495ed;
-  color: #faebd7;
+  background-color: $header-backgroud-color;
+  color: $header-color;
   padding: 20px;
   @include breakpoint(small) {
     header {
@@ -38,7 +48,7 @@ header {
 }
 
 h1 a {
-  color: #faebd7;
+  color: $header-color;
   font-family: "Lora", serif;
   text-decoration: none;
 }
@@ -50,7 +60,7 @@ nav ul li {
   a {
     &:link,
     &:visited {
-      color: #faebd7;
+      color: $header-color;
       text-decoration: none;
     }
 
@@ -60,7 +70,7 @@ nav ul li {
     }
 
     &:active {
-      color: #deb887;
+      color: $active-link-color;
     }
   }
 }
@@ -78,14 +88,14 @@ div {
 }
 
 main {
-  background-color: #faebd7;
+  background-color: $header-color;
   padding: 1em;
   padding-top: 2em;
   grid-column: 2/3;
   a {
     &:link,
     &:visited {
-      color: #6495ed;
+      color: header-backgroud-color;
       text-decoration: none;
     }
 
@@ -94,7 +104,7 @@ main {
     }
 
     &:active {
-      color: #deb887;
+      color: $active-link-color;
     }
   }
   @include breakpoint(small) {
@@ -118,12 +128,12 @@ article {
     }
 
     &:hover {
-      color: #6495ed;
+      color: header-backgroud-color;
       text-decoration: underline;
     }
 
     &:active {
-      color: #deb887;
+      color: $active-link-color;
     }
   }
 }

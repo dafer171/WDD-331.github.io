@@ -54,7 +54,7 @@ main {
   grid-column: 2/3;
 }
 main a:link, main a:visited {
-  color: #6495ed;
+  color: header-backgroud-color;
   text-decoration: none;
 }
 main a:hover {
@@ -82,7 +82,7 @@ article h2 a:link, article h2 a:visited {
   text-decoration: none;
 }
 article h2 a:hover {
-  color: #6495ed;
+  color: header-backgroud-color;
   text-decoration: underline;
 }
 article h2 a:active {
