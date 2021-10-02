@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
+
+header {
+  text-align: right;
+  background-color: #6495ed;
+  color: #faebd7;
+  padding: 20px;
+}
+
+h1 a {
+  color: #faebd7;
+  font-family: "Lora", serif;
+  text-decoration: none;
+}
+
+nav ul li {
+  list-style: none;
+  line-height: 2em;
+
+  a {
+    &:link,
+    &:visited {
+      color: #faebd7;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: #deb887;
+    }
+  }
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+main {
+  background-color: #faebd7;
+  padding: 1em;
+  padding-top: 2em;
+
+  a {
+    &:link,
+    &:visited {
+      color: #6495ed;
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: #deb887;
+    }
+  }
+}
+
+article {
+  background-color: white;
+  border: solid 1px gray;
+  box-shadow: 10px 5px 5px #cdcdcd;
+  margin: 2em;
+  margin-top: 0px;
+  padding: 2em;
+
+  h2 a {
+    &:link,
+    &:visited {
+      color: black;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: #6495ed;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: #deb887;
+    }
+  }
+}
+
+img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 32.5em) {
+  div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  header {
+    grid-column: 1/2;
+  }
+
+  main {
+    grid-column: 2/3;
+  }
+
+  figure {
+    text-align: center;
+  }
+
+  img {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  img {
+    max-width: 50%;
+  }
+}
