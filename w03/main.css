@@ -5,6 +5,11 @@ header {
   color: #faebd7;
   padding: 20px;
 }
+@media (max-width: 32.5em) {
+  header header {
+    grid-column: 1/2;
+  }
+}
 
 h1 a {
   color: #faebd7;
@@ -32,10 +37,21 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+div {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+@media (max-width: 32.5em) {
+  div {
+    display: block;
+  }
+}
+
 main {
   background-color: #faebd7;
   padding: 1em;
   padding-top: 2em;
+  grid-column: 2/3;
 }
 main a:link, main a:visited {
   color: #6495ed;
@@ -46,6 +62,11 @@ main a:hover {
 }
 main a:active {
   color: #deb887;
+}
+@media (max-width: 32.5em) {
+  main {
+    display: block;
+  }
 }
 
 article {
@@ -69,34 +90,22 @@ article h2 a:active {
 }
 
 img {
-  width: 100%;
+  width: 50%;
 }
-
-@media only screen and (min-width: 32.5em) {
-  div {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+@media (max-width: 32.5em) {
+  img {
+    max-width: 90%;
   }
-
-  header {
-    grid-column: 1/2;
-  }
-
-  main {
-    grid-column: 2/3;
-  }
-
-  figure {
-    text-align: center;
-  }
-
+}
+@media (max-width: 60em) {
   img {
     max-width: 80%;
   }
 }
-@media only screen and (min-width: 60em) {
-  img {
-    max-width: 50%;
+
+@media (max-width: 32.5em) {
+  figure {
+    text-align: center;
   }
 }
 
