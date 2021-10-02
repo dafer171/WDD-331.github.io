@@ -1,60 +1,80 @@
+/* Global styles */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
-  background: white;
+  background-color: darkred;
 }
 
-@media (max-width: 60em) {
-  body {
-    background: red;
+#contactform > {
+  background-color: burlywood;
+}
+#contactform > a:hover {
+  background-color: antiquewhite;
+}
+#contactform > input,
+#contactform > textarea {
+  background-color: antiquewhite;
+  flex: 2;
+}
+@media (min-width: 31em) {
+  #contactform > {
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-@media (max-width: 31em) {
-  body {
-    background: cyan;
+@media (min-width: 60em) {
+  #contactform > {
+    width: 70%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-@media (max-width: 20em) {
-  body {
-    background: green;
-  }
-}
-@media (max-width: 480px) {
-  body {
-    background: yellow;
-  }
 
-  /*
-  background-color: $body-background-color;
-  #contactform {
-    background-color: $form-background-color;
-    input,
-    textarea {
-      background-color: $input-color;
-      flex: 2;
-    }
-    @media (min-width: $break-small) {
-      & {
-        width: 90%;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-    @media (min-width: $break-large) {
-      & {
-        width: 70%;
-        max-width: 900px;
-      }
-    }
-    fieldset > div {
-      @include flex-container(column);
-    }
-    fieldset > div {
-      @include flex-container(row, wrap);
-    }
-    #content {
-      @include center;
-    }
-  } */
+#contactform fieldset > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+#contactform fieldset > div label {
+  flex: 1;
+  text-align: left;
+}
+@media (min-width: 31em) {
+  #contactform fieldset > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  #contactform fieldset > div label {
+    text-align: right;
+    margin-right: 1em;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

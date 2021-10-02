@@ -1,31 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
 
 header {
   text-align: right;
-  background-color: #6495ED;
-  color:#FAEBD7;
+  background-color: #6495ed;
+  color: #faebd7;
   padding: 20px;
 }
 
 h1 a {
-  color:#FAEBD7;
-  font-family: 'Lora', serif;
+  color: #faebd7;
+  font-family: "Lora", serif;
   text-decoration: none;
 }
 
 nav ul li {
   list-style: none;
   line-height: 2em;
-
 }
 
 nav ul li a:link {
-  color: #FAEBD7;
+  color: #faebd7;
   text-decoration: none;
 }
 
 nav ul li a:visited {
-  color: #FAEBD7;
+  color: #faebd7;
   text-decoration: none;
 }
 
@@ -35,38 +34,26 @@ nav ul li a:hover {
 }
 
 nav ul li a:active {
-  color: #DEB887;
+  color: #deb887;
 }
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  /*
-  background-color: #aeb7b3;
-  padding: 5px 25px;
-  font-size: 18px;
-  margin: 0 auto;
-  max-width: 1300px;
-  */
 }
 
-
 main {
-  background-color: #FAEBD7;
+  background-color: #faebd7;
   padding: 1em;
   padding-top: 2em;
-  /*
-  padding: 5px 25px;
-  margin: 0 auto;
-  */
 }
 
 main a:link {
-  color: #6495ED;
+  color: #6495ed;
   text-decoration: none;
 }
 
 main a:visited {
-  color: #6495ED;
+  color: #6495ed;
   text-decoration: none;
 }
 
@@ -75,7 +62,7 @@ main a:hover {
 }
 
 main a:active {
-  color: #DEB887;
+  color: #deb887;
 }
 
 article {
@@ -98,12 +85,12 @@ article h2 a:visited {
 }
 
 article h2 a:hover {
-  color: #6495ED;
+  color: #6495ed;
   text-decoration: underline;
 }
 
 article h2 a:active {
-  color: #DEB887;
+  color: #deb887;
 }
 
 img {
@@ -124,13 +111,12 @@ img {
     grid-column: 2/3;
   }
 
-  figure{
+  figure {
     text-align: center;
   }
   img {
     max-width: 80%;
   }
-  
 }
 
 @media only screen and (min-width: 60em) {
