@@ -1,0 +1,16 @@
+fieldset:nth-of-type(n + 3) > * + * {
+  background-color: red;
+  display: none;
+}
+fieldset[title="fieldset3"][title="fieldset4"] {
+  display: inline-block;
+  cursor: pointer;
+}
+/*
+fieldset:focus {
+  outline: none;
+}
+fieldset:nth-of-type(n + 3) > * + * {
+  display: block;
+}
+*/
